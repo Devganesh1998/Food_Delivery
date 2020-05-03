@@ -2,7 +2,7 @@
   background: #000;
   position: sticky;
   top: 0;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -14,9 +14,11 @@
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 1.4rem;
+  font-weight: bold;
 }
 .navbar *:hover {
-  background: red;
+  background: #fff;
+  color: #000;
 }
 
 .void {
