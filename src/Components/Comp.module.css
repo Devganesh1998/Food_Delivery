@@ -1,0 +1,28 @@
+.navbar {
+  background: #000;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar * {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+}
+.navbar *:hover {
+  background: red;
+}
+
+.void {
+  height: 100vh;
+}
+
+.void:nth-child(odd) {
+  background: #121212;
+}
