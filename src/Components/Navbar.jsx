@@ -26,7 +26,7 @@ const Navbar = () => {
         <Route path="/login" component={Login} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={ContactUs} />
-        <Route render={<h1>Error Code : 404 Page not Found.</h1>} />
+        <Route render={() => <h1>Error Code : 404 Page not Found.</h1>} />
       </Switch>
     </>
   );

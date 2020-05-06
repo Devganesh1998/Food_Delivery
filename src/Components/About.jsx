@@ -1,12 +1,17 @@
 import React from "react";
 import styles from "./Comp.module.css";
+import { connect } from "react-redux";
 
-const About = () => {
+const About = (props) => {
   return (
     <>
-      <div className={styles.void}>About</div>
+      <div className={styles.void}>{props.data}</div>
     </>
   );
 };
 
-export default About;
+const matchStateToProps = (state) => ({
+  data: state.about,
+});
+
+export default connect(matchStateToProps, null)(About);
