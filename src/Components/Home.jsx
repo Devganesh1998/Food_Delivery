@@ -3,9 +3,12 @@ import styles from "./Comp.module.css";
 
 const Home = () => {
   return (
-    <>
-      <div className={styles.void}>Home</div>
-    </>
+    <React.Fragment>
+      <div className={styles.home}>
+        <div>hello</div>
+        <div>hello</div>
+      </div>
+    </React.Fragment>
   );
 };
 
