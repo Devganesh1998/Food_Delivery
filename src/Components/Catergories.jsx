@@ -6,18 +6,13 @@ import { addToCart } from "../Redux/action";
 class Categories extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      count: 0,
-    };
   }
 
   handleClick = (item, innerRef, foodData) => {
     console.log("inside handle click", item, innerRef, foodData);
     this.props.addCart({
-      id: this.state.count,
       data: [item, innerRef, foodData[item][innerRef]],
     });
-    this.setState({ count: this.state.count + 1 });
   };
 
   render() {

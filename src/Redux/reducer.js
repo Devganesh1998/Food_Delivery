@@ -21,12 +21,10 @@ export const initState = {
 export const reducer = (state, { type, payload }) => {
   switch (type) {
     case ADD_CART:
-      console.log(payload);
       let newcart = state.cart;
-      newcart[payload.id] = payload;
-      return {
-        ...state,
-      };
+      payload.id = Object.keys(state.cart).length;
+      newcart[Object.keys(state.cart).length] = payload;
+      return state;
     default:
       return state;
   }

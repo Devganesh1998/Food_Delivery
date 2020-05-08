@@ -7,13 +7,6 @@
   align-items: center;
   justify-content: space-evenly;
   z-index: 1000;
-  transition: all 0.5s;
-}
-
-.navbar:hover {
-  box-shadow: 0 4px 8px rgba(38, 38, 38, 0.2);
-  border: 1px solid #000;
-  width: 100vw;
 }
 
 .navbar * {
@@ -32,7 +25,8 @@
 }
 
 .home {
-  background-image: url("/home.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/home.jpg");
   background-attachment: scroll;
   background-size: cover;
   height: 90vh;
@@ -41,15 +35,7 @@
 }
 
 .home * {
-  opacity: 1;
-}
-
-.void {
-  height: 100vh;
-}
-
-.void:nth-child(odd) {
-  background: #121212;
+  color: #fff;
 }
 
 @media only screen and (max-width: 600px) {

@@ -5,8 +5,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <div className={styles.home}>
-        <div>hello</div>
-        <div>hello</div>
+        <div>hello here is some delicious food</div>
       </div>
     </React.Fragment>
   );
