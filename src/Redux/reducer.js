@@ -1,4 +1,4 @@
-import { ADD_CART } from "./action";
+import { ADD_CART, REGISTER_USER } from "./action";
 
 export const initState = {
   about: "Food factory (Inspired by Zomato)",
@@ -25,6 +25,13 @@ export const reducer = (state, { type, payload }) => {
       payload.id = Object.keys(state.cart).length;
       newcart[Object.keys(state.cart).length] = payload;
       return state;
+
+    case REGISTER_USER:
+      return {
+        ...state,
+        users: [...state.users, action.data],
+      };
+
     default:
       return state;
   }
